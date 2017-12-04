@@ -1,0 +1,18 @@
+import java.util.Scanner;
+//輾轉相除法 求最大公因數
+public class MOD3_7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a= sc.nextInt();
+        int b = sc.nextInt();
+        int r = a%b;
+        while (r!=0){
+            a=b;
+            b=r;
+            r = (a%b);
+        }
+        if (r ==0){
+            System.out.println(b);
+        }
+    }
+}
