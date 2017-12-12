@@ -1,5 +1,3 @@
-package ex;
-
 import java.util.Scanner;
 /*
  * Topic: 輸入一整數 N 及 N 個整數，請依照十進位中各位數字和由小到大排序輸出。如果各位數字和相等則比較數值由小到大排列。
