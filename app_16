@@ -1,3 +1,4 @@
+//取亂數排序正向反向亂數總和
 import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Random;
