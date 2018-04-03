@@ -1,0 +1,26 @@
+import java.util.LinkedList;
+import java.util.ListIterator;
+import java.util.Random;
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<Integer> llist = new LinkedList<Integer>();
+        Random ran = new Random();
+        int a = 0;
+        //這邊要+1是因為原本範圍為0~41 有42個變數
+        //+1之後變成1~42
+        for (int i = 0; i <= 9; i++) {    // 增加元素
+            llist.add(ran.nextInt(100) + 1);
+        }
+        for (int i = 0; i < llist.size(); i++) {  // 顯示集合物件的內容
+                System.out.print(llist.get(i)+" ");
+            a = a + llist.get(i);
+        }
+        System.out.println();
+        ListIterator<Integer> litr2=llist.listIterator(llist.size());
+        System.out.print("反向列出:");
+        while(litr2.hasPrevious())				// 反向走訪元素
+            System.out.print(litr2.previous()+" ");	// 印出元素內容
+        System.out.println();
+        System.out.println("亂數總和="+a);
+    }
+}
